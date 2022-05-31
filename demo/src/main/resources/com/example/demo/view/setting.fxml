@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.demo.view.Setting"
+            prefHeight="720.0" prefWidth="1280.0" stylesheets="@../../../../style_sheet/welcome_page.css">
+
+    <center>
+        <VBox alignment="CENTER" spacing="20">
+            <HBox alignment="TOP_CENTER" spacing="10">
+                <Text text="difficulty : " id="welcome_text"/>
+                <Button text="Easy" onMouseEntered="#mouseShapeEnter" onMouseExited="#mouseShapeExit" onMouseClicked="#setEasy"/>
+                <Button text="Medium" onMouseEntered="#mouseShapeEnter" onMouseExited="#mouseShapeExit" onMouseClicked="#setMedium"/>
+                <Button text="Hard" onMouseEntered="#mouseShapeEnter" onMouseExited="#mouseShapeExit" onMouseClicked="#setHard"/>
+            </HBox>
+            <Button text="Mute" onMouseEntered="#mouseShapeEnter" onMouseExited="#mouseShapeExit" onMouseClicked="#mute" fx:id="muteButton"/>
+            <Button text="Back" onMouseEntered="#mouseShapeEnter" onMouseExited="#mouseShapeExit" onMouseClicked="#back"/>
+        </VBox>
+
+    </center>
+
+</BorderPane>
